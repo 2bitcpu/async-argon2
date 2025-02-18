@@ -1,0 +1,9 @@
+[package]
+name = "async-argon2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = { version = "0.5.3", features = ["alloc", "password-hash", "std"], default-features = false }
+password-hash = { version = "0.5.0", features = ["getrandom"], default-features = false }
+tokio = { version = "1.43.0", features = ["rt-multi-thread"], default-features = false }
